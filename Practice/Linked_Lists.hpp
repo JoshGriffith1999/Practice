@@ -59,7 +59,7 @@ void LL<T>::clear(){
 template<typename T>
 void LL<T>::addHead(T value){
 	
-	Node<T>* obj = new makeNode<T>(value, NULL, NULL);
+	Node<T>* obj = new Node<T>(value)
 	
 	if(count == 0){
 		
@@ -78,7 +78,7 @@ template<typename T>
 void LL<T>::addLast(T value){
 	
 	
-	ode<T>* obj = new makeNode<T>(value, NULL, NULL);
+	ode<T>* obj = new Node<T>(value);
 	
 	if(count == 0){
 		

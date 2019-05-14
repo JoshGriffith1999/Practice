@@ -10,17 +10,19 @@ class Node{
 		T data;
 		Node<T>* next;
 		Node<T>* prev;
-	
+		void makeNode(T, Node<T>*, Node<T>*);
+		 
 	public:
 		T getValue();
 		Node<T>* getNext();
 		Node<T>* getPrev();
+		Node<T> Node(T);
 		
 		void setValue(T);
 		void setPrev(Node<T>*);
 		void setNext(Node<T>*);
 	
-		void makeNode(T, Node<T>*, Node<T>*);	
+			
 };
 
 template<typename T>
@@ -42,6 +44,13 @@ Node<T>* Node<T>::getPrev(){
 	
 	return this->prev;
 }
+
+template<typename T>
+Node<T> Node<T>::Node(T value){
+	
+	this->makeNode(value, NULL,NULL)
+}
+
 template<typename T>
 void Node<T>::setValue(T x){
 

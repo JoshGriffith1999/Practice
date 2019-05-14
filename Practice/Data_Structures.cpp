@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 	
-	LL obj;
+	LL<int> obj;
 	
 	obj.addFirst(0);
 	obj.addFirst(1);
