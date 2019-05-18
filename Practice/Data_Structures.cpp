@@ -7,11 +7,11 @@ int main(){
 	
 	LL<int> obj;
 	
-	obj.addFirst(0);
-	obj.addFirst(1);
-	obj.addFirst(2);
-	obj.addFirst(3);
-	obj.addFirst(4);
+	obj.addHead(0);
+	obj.addHead(1);
+	obj.addHead(2);
+	obj.addHead(3);
+	obj.addHead(4);
 	
 	obj.printList();
 	
