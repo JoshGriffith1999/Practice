@@ -7,11 +7,24 @@ int main(){
 	
 	LL<int> obj;
 	
+	/*
 	obj.addHead(0);
 	obj.addHead(1);
 	obj.addHead(2);
 	obj.addHead(3);
 	obj.addHead(4);
+	*/
+	
+	/*
+	obj.addLast(0);
+	obj.addLast(1);
+	obj.addLast(2);
+	obj.addLast(3);
+	obj.addLast(4);
+	*/
+	
+	
+	obj.addMiddle(5,3);
 	
 	obj.printList();
 	
