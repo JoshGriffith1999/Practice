@@ -20,7 +20,7 @@ class LL{
 		void addHead(T);
 		void addLast(T);
 		void addMiddle(T, int);
-		void printList();
+		void printList(bool);
 };
 
 /*
@@ -50,9 +50,9 @@ template<typename T>
 void LL<T>::clear(){
 	
 	if(head != NULL){
-		
+		int i = 1;
 		Node<T>* hold = this->head;
-		while(this->head != NULL){
+		for(i = 1; i <= count; i++){
 			
 			
 			delete head;
@@ -83,8 +83,11 @@ void LL<T>::addHead(T value){
 	
 	else
 		obj->setNext(this->head);
+		this->head->setPrev(obj);
 		this->head = obj;
 		this->count++;
+		
+	this->head->setPrev(this->tail);
 }
 
 /*
@@ -106,8 +109,11 @@ void LL<T>::addLast(T value){
 	
 	else
 		obj->setPrev(this->tail);
+		this->tail->setNext(obj);
 		this->tail = obj;
 		this->count++;
+		
+	this->tail->setNext(this->head);
 }
 
 /*
@@ -118,44 +124,29 @@ template<typename T>
 void LL<T>::addMiddle(T value, int location){
 	
 	Node<T>* obj = new Node<T>(value);
+	Node<T>* walker = this->head;
 	int i = 1;
 	
-	if(this->head->getNext() != NULL){
-	
-		Node<T>* walker = this->head;
-		for(i = 1; i < location - 1; i++){
+	for(i = 1; i < location - 1; i++){
 		
-			walker = walker->getNext();
+		walker = walker->getNext();
 		}
 		
-		obj->setNext(walker->getNext());
-		walker->setNext(obj);
+	obj->setNext(walker->getNext());
+	obj->setPrev(walker);
+	walker->setNext(obj);
 		
-		this->count++;
-	}
-	
-	
-	else{
-		Node<T>* walker = this->tail;
-		for(i = this->count; i > location + 1; i--){
-		
-			walker = walker->getPrev();
-		}
-		
-		obj->setPrev(walker->getPrev());
-		walker->setPrev(obj);
-		
-		this->count++;
-	}
+	this->count++;
 }
 
 /*
 prints the list, each entry on a new line
+0 = a forward search, 1 = backwards search
 */
 template<typename T>
-void LL<T>::printList(){
+void LL<T>::printList(bool way){
 	
-	if(this->head->getNext() != NULL){
+	if(way == 0){
 		Node<T>* hold = this->head;
 		int i = 0;
 	
