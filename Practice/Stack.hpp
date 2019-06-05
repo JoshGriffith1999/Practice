@@ -67,7 +67,7 @@ Node<T> Stack<T>::seeStack(){
 	int i = 0;
 	Node<T>* walker = this->head;
 	
-	for(i = 0; i < count; i++){
+	for(i = 0; i <= count; i++){
 		
 			cout << walker->getValue() << endl;
 		
@@ -81,7 +81,30 @@ removeHead: removes the head node and sets the next node in the stack to be the 
 template<typename T>
 void Stack<T>::removeHead(){
 	
+	Node<T>* walker = this->head;
 	
+	delete this->head;
+	
+	this->head = walker->getNext();
+	
+	this->count--;
+}
+
+/*
+clear: empties the stack of all nodes
+*/
+template<typename T>
+void Stack<T>::clear(){
+	
+	int i = 0;
+	Node<T>* node = this->head;
+	
+	for(i = 0; i <= count; i++){
+		
+		delete this->head;
+		
+		this->head = node->getNext();
+	}
 }
 
 #endif
