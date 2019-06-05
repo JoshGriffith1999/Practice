@@ -15,10 +15,12 @@ class Node{
 	public:
 		//Node maker function
 		Node(T);
+		
 		//Get value/info stored in of the three private mambers
 		Node<T>* getNext();
 		Node<T>* getPrev();
 		T getValue();
+		
 		//Sets value to any of the three private members
 		void setNext(Node<T>*);
 		void setPrev(Node<T>*);
