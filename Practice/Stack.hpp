@@ -3,7 +3,7 @@
 #include<iostream>
 #include "Node.hpp"
 
-//using namespace std;
+using namespace std;
 
 
 template<typename T>
@@ -18,7 +18,7 @@ class Stack{
 		~Stack();
 		
 		void addStack(T);
-		Node<T> seeStack();
+		void seeStack();
 		void removeHead();
 		void clear();
 		
@@ -52,8 +52,8 @@ void Stack<T>::addStack(T value){
 	
 	Node<T>* myNode = new Node<T>(value);
 	
-	myNode->getNext(head);
-	this-head = myNode;
+	myNode->setNext(this->head);
+	this->head = myNode;
 	
 	this->count++;
 }
@@ -62,7 +62,7 @@ void Stack<T>::addStack(T value){
 seeStack: shows the value of each new in the stack
 */
 template<typename T>
-Node<T> Stack<T>::seeStack(){
+void Stack<T>::seeStack(){
 	
 	int i = 0;
 	Node<T>* walker = this->head;

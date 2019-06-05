@@ -7,28 +7,21 @@ using namespace std;
 
 int main(){
 	
-	LL<int> obj;
+	Stack<int> obj;
 	
 	
-	obj.addHead(0);
-	obj.addHead(3);
-	obj.addHead(2);
-	obj.addHead(1);
-	obj.addHead(0);
+	obj.addStack(0);
+	obj.addStack(1);
+	obj.addStack(2);
+	obj.addStack(3);
+	
+	obj.seeStack();
+	
+	obj.removeHead();
+	
+	obj.seeStack();
 	
 	
-	
-	obj.addLast(6);
-	obj.addLast(7);
-	obj.addLast(8);
-	obj.addLast(9);
-	obj.addLast(10);
-	
-	
-	
-	obj.addMiddle(11,3);
-	
-	obj.printList(1);
-	
+		
 	return 0;
 }
