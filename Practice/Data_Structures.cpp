@@ -1,6 +1,6 @@
 #include<iostream>
 #include"Linked_Lists.hpp"
-#include "Stack_and_Queues.hpp"
+#include "Stack.hpp"
 
 
 using namespace std;
