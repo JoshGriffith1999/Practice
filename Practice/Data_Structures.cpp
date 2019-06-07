@@ -10,17 +10,18 @@ int main(){
 	
 	Queue<int> obj;
 	
-	
 	obj.addQueue(0);
 	obj.addQueue(1);
 	obj.addQueue(2);
 	obj.addQueue(3);
 	obj.addQueue(4);
 	
+	cout << "First time through" << endl;
 	obj.printQueue();
 	
 	obj.removeHead();
 	
+	cout << "Second time though" << endl;
 	obj.printQueue();
 	
 	
