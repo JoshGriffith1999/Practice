@@ -1,25 +1,27 @@
 #include<iostream>
 #include"Linked_Lists.hpp"
 #include "Stack.hpp"
+#include "Queues.hpp"
 
 
 using namespace std;
 
 int main(){
 	
-	Stack<int> obj;
+	Queue<int> obj;
 	
 	
-	obj.addStack(0);
-	obj.addStack(1);
-	obj.addStack(2);
-	obj.addStack(3);
+	obj.addQueue(0);
+	obj.addQueue(1);
+	obj.addQueue(2);
+	obj.addQueue(3);
+	obj.addQueue(4);
 	
-	obj.seeStack();
+	obj.printQueue();
 	
-	obj.removeHead();
+	obj.removeQueue();
 	
-	obj.seeStack();
+	obj.printQueue();
 	
 	
 		
