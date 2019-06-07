@@ -2,6 +2,7 @@
 #define Node_HPP
 #include<iostream>
 
+using namespace std;
 //Node class
 template<typename T>
 class Node{

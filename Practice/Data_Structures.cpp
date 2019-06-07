@@ -19,7 +19,7 @@ int main(){
 	
 	obj.printQueue();
 	
-	obj.removeQueue();
+	obj.removeHead();
 	
 	obj.printQueue();
 	

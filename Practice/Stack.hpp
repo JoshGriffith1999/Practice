@@ -2,9 +2,7 @@
 #define Stack_hpp
 #include<iostream>
 #include "Node.hpp"
-
 using namespace std;
-
 
 template<typename T>
 class Stack{
@@ -52,7 +50,7 @@ void Stack<T>::addStack(T value){
 	
 	Node<T>* myNode = new Node<T>(value);
 	
-	myNode->setNext(this->head);
+	myNode->setPrev(this->head);
 	this->head = myNode;
 	
 	this->count++;
@@ -71,7 +69,7 @@ void Stack<T>::seeStack(){
 		
 			cout << walker->getValue() << endl;
 		
-		walker = walker->getNext();
+		walker = walker->setPrev();
 	}
 }
 
@@ -85,7 +83,7 @@ void Stack<T>::removeHead(){
 	
 	delete this->head;
 	
-	this->head = walker->getNext();
+	this->head = walker->setPrev();
 	
 	this->count--;
 }
@@ -103,7 +101,7 @@ void Stack<T>::clear(){
 		
 		delete this->head;
 		
-		this->head = node->getNext();
+		this->head = node->setPrev();
 	}
 }
 
