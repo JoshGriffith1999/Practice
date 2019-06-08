@@ -71,9 +71,9 @@ void Queue<T>::removeHead(){
 	
 	Node<T>* hold = this->head;
 	
-	delete this->head;
+	this->head = this->head->getNext();
 	
-	this->head = hold->getNext();
+	delete hold;
 	
 	this->count--;
 }
