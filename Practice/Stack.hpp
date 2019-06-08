@@ -8,7 +8,6 @@ template<typename T>
 class Stack{
 	private:
 		Node<T>* head;
-		//Node<T>* tail;
 		int count;
 		
 	public:
@@ -28,7 +27,6 @@ template<typename T>
 Stack<T>::Stack(){
 	
 	this->head = NULL;
-	//this->tail = NULL;
 	this->count = 0;
 }
 template<typename T>
@@ -50,7 +48,7 @@ void Stack<T>::addStack(T value){
 	
 	Node<T>* myNode = new Node<T>(value);
 	
-	myNode->setPrev(this->head);
+	myNode->setNext(this->head);
 	this->head = myNode;
 	
 	this->count++;
@@ -69,7 +67,7 @@ void Stack<T>::seeStack(){
 		
 			cout << walker->getValue() << endl;
 		
-		walker = walker->setPrev();
+		walker = walker->getNext();
 	}
 }
 
@@ -81,9 +79,9 @@ void Stack<T>::removeHead(){
 	
 	Node<T>* walker = this->head;
 	
-	delete this->head;
+	this->head = this->head->getNext();
 	
-	this->head = walker->setPrev();
+	delete walker;
 	
 	this->count--;
 }
@@ -97,11 +95,11 @@ void Stack<T>::clear(){
 	int i = 0;
 	Node<T>* node = this->head;
 	
-	for(i = 0; i <= count; i++){
+	for(i = 0; i < count; i++){
 		
-		delete this->head;
+		this->head = this->head->getNext();
 		
-		this->head = node->setPrev();
+		delete node;
 	}
 }
 

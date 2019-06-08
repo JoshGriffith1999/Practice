@@ -2,7 +2,7 @@
 #include"Linked_Lists.hpp"
 #include "Stack.hpp"
 #include "Queues.hpp"
-
+#include"Binary_Trees.hpp"
 
 using namespace std;
 
