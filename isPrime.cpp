@@ -5,7 +5,7 @@ using namespace std;
 
 bool isPrime(int p){
 	
-	if(p % 3 != 0)
+	if(p % 2 != 0)
 		return false;
 	else if(p % 3 != 0)
 		return false;
@@ -29,7 +29,8 @@ int main(){
 		
 		if(isPrime(i) && isPrime(i + 3))
 			cout << i << "" << i + 3 << endl;
-				
+		else
+			cout << "not prime"  << endl;
 		
 	}
 	
