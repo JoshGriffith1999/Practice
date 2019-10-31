@@ -1,5 +1,6 @@
-#ifndef BattleCharacter
-#define BattleCharacter
+#ifndef BattleCharacter_H
+#define BattleCharacter_H
+#include<iostream>
 using namespace std;
 
 template<typename T>
@@ -29,51 +30,75 @@ class avatar{
 	void setMagicPower(T);
 	void setArmour(T);
 	void setStrength(T);
-}
+};
 
 template<typename T>
-avatar::avatar(){
+avatar<T>::avatar(){
 	
 	this -> health = 0;
 	this -> magicPower = 0;
 	this -> armour = 0;
 	this -> strength = 0;
 	
-	cout << "Constructor #1" << end;
+	cout << "Constructor #1" << endl;
 }
 template<typename T>
-avatar::avatar(T h, T mp, T a, T s){
+avatar<T>::avatar(T h, T mp, T a, T s){
 		this -> health = h;
 	this -> magicPower = mp;
 	this -> armour = a;
 	this -> strength = s;
 	
-	cout << "Constructor #1" << end;
+	cout << "Constructor 2" << endl;
 }
 template<typename T>
-avatar::~avatar(){
+avatar<T>::~avatar(){
 	
-	cout << "De-constructor" << end;
+	cout << "De-constructor" << endl;
 	
 }
 
 template<typename T>
-void avatar::getHealth(){}
+void avatar<T>::setHealth(T x){
+	
+	this->health = x;
+}
 template<typename T>
-void avatar::getMagicPower(){}
+void avatar<T>::setMagicPower(T x){
+	
+	this->magicPower = x;
+}
 template<typename T>
-void avatar::getArmour(){}
+void avatar<T>::setArmour(T x){
+	
+	this->armour = x;
+}
 template<typename T>
-avatar::getStrength(){}
+void avatar<T>::setStrength(T x){
+	
+	this->strength = x;
+}
 
 template<typename T>
-T avatar::setHealth(T h){}
+T avatar<T>::getHealth(){
+	
+	return this->health;
+}
 template<typename T>
-T avatar::setMagicPower(T mp){}
+T avatar<T>::getMagicPower(){
+	
+	return this->magicPower;
+}
 template<typename T>
-T avatar::setArmour(T a){}
+T avatar<T>::getArmour(){
+	
+	return this->armour;
+}
 template<typename T>
-T avatar::setStrength(T s){}
+T avatar<T>::getStrength(){
+	
+	return this->strength;
+}
 
 
 #endif

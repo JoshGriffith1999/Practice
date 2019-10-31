@@ -1,11 +1,12 @@
 #include<iostream>
-#include"BattleCharacter.hpp"
+#include"Player.hpp"
+#include"Villain.hpp"
 
 using namespace std;
 
 int main(){
 	
-	avatar<int> test = new avatar;
+	Player<int> avatar;
 	
 	return 0;
 }
