@@ -1,5 +1,6 @@
 #ifndef myMath
 #define myMath
+#include<iostream>	
 #define SIZE 1000000
 using namespace std;
 
@@ -68,6 +69,18 @@ float power(float base, float exponent){
 		
 		
 	}
+	return result;
+}
+
+float factorial(long float x){
+	
+	long float result = 1;
+	for(unsigned int k = 1; k < x; k++){
+		
+		result = result * k;
+		
+	}
+	
 	return result;
 }
 
