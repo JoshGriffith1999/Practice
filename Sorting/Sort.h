@@ -1,4 +1,4 @@
-#ifdef __SORT_H__
+#ifndef __SORT_H__
 #define __SORT_H__
 #include<iostream>
 
@@ -10,7 +10,9 @@ class Sort{
 
     public:
 
-    void bubble(T);
+    void print(T array[]);
+    void bubble(T array[]);
+
 };
 
 

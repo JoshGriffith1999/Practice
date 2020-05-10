@@ -3,7 +3,18 @@
 using namespace std;
 
 template<typename T>
-void Sort::bubble(T array){
+void Sort<T>::print(T array[]){
+
+    len = array.length;
+
+    for(int i = 0; i < len; i++)
+        cout << array[i] << end;
+}
+
+
+
+template<typename T>
+void Sort<T>::bubble(T array[]){
 
     int arraySize = array.length;
     int hold = 0;
