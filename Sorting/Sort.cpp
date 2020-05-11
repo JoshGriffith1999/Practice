@@ -1,26 +1,19 @@
 #include<iostream>
-#include"Sort.h"
-using namespace std;
+#include"Sort.hpp"
 
-template<typename T>
-void Sort<T>::print(T array[]){
+void Sort::print(int array[]){
 
-    len = array.length;
-
-    for(int i = 0; i < len; i++)
-        cout << array[i] << end;
+    for(int i = 0; i < 5; i++)
+        cout << array[i] << endl;
 }
 
+void Sort::bubble(int array[]){
 
 
-template<typename T>
-void Sort<T>::bubble(T array[]){
-
-    int arraySize = array.length;
     int hold = 0;
 
-    for(int i = 0; i < arraySize; i++){
-        for(int k = 0; k < arraySize; k++){
+    for(int i = 0; i < 5; i++){
+        for(int k = 0; k < 5; k++){
 
             if(array[i] < array[k]){
                 hold = array[i];

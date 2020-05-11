@@ -1,19 +1,13 @@
 #include<iostream>
-#include"Sort.h"
+#include"Sort.hpp"
 
 using namespace std;
 
 int main(){
 
-    int array[5];
-    
-    array[0] = 1;
-    array[1] = 3;
-    array[2] = 5;
-    array[3] = 2;
-    array[4] = 4;
+    int array[5] = {1,3,5,2,4};
 
-    Sort<int> sort;
+    Sort sort;
 
     sort.bubble(array);
 
