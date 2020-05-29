@@ -1,5 +1,5 @@
-#include<iostream>
-#include"Sort.hpp"
+#include <iostream>
+#include "Sort.h"
 
 void Sort::print(int array[]){
 
