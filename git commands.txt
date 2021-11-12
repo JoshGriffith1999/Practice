@@ -1,0 +1,30 @@
+git config --global user.name "Sam Smith": config author name
+git config --global user.email sam@example.com: config author email
+git init: create new repository
+
+//clone, commit, push
+git clone /path/@some: clone repository
+git add <file name>: commit file name
+git add -A: commit all files edits
+git commit -m "": commit files to repository
+git push origin master: push ot master branch
+git status: list files in the commit or are not in commit
+
+//branches
+git checkout -b <branch Name>: create new branch
+git checkout <branch Name>: switch to branch
+git branch: list all branches
+git put origin <branch name>: push to branch
+
+//update from remote repository
+git pull: grab updates in repository
+git merge <branch name>: To merge a different branch into your active branch:
+git diff: View all the merge conflicts: View the conflicts against the base file:
+Preview changes, before merging: View all the merge conflicts: View the conflicts against the base file:
+git diff --base <filename>: View all the merge conflicts: View the conflicts against the base file:
+git diff <sourcebranch> <targetbranch>: View all the merge conflicts: View the conflicts against the base file:
+
+//undo changes
+git checkout -- <filename>: If mess up, can replace the changes in your working tree with the last content in head Changes already added to the index, as well as new files, will be kept.
+git fetch origin: Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this:
+git reset --hard origin/master: Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this:
