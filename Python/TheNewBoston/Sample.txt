@@ -1,0 +1,5 @@
+Writting some stuff in my text file
+New line character above moved this to a new line
+Appending something to the file
+Appending another thing to the file
+One more thing to append to the file

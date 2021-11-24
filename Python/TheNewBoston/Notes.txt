@@ -1,0 +1,4 @@
+Note
+the programs in this directory are examples theNewBoston'safe Python 3.4 playlist tutorial
+I do have some deviations in what I wrote commared to the what he has in the video
+Not all files align with the video number in the playlist

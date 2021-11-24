@@ -3,4 +3,4 @@
 void ArchType::Warrior(){}
 void ArchType::Wizard(){}
 void ArchType::Bard(){}
- void ArchType::WitchDoctor(){}
+void ArchType::WitchDoctor(){}
