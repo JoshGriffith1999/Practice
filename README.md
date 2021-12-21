@@ -1,4 +1,1 @@
-# Personal-Projects
-Personal Projects that I worked on to make sure that I didn't forget how to code over long breaks
-This contains little programs that I've created so far for personal development and remembrance, for math assignments, and Gen Cyber computer camp
-
+This repo is mostly when I'm learning or reviewing a topic or language. To be honest this is nothing really worth seeing in here
