@@ -1,0 +1,1 @@
+Note the website directory follows TheNewBoston's Django serieres

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<response>
+    <people>
+        <person>
+            <name>Brett Farve</name>
+            <ssn>123456789</ssn>
+        </person>
+        <person>
+            <name>John Elway</name>
+            <ssn>234567891</ssn>
+        </person>
+        <person>
+            <name>Troy Aikman</name>
+            <ssn>34678912</ssn>
+        </person>
+    </people>
+</response>

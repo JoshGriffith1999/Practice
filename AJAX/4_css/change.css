@@ -1,0 +1,38 @@
+/*Dude styling*/
+
+.dudeTable {
+    border: 3px solid #CC0000;
+    background-color: #0099CC;
+    color: white;
+}
+
+.dudeHead {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dudeItem {
+    font-family: arial;
+    font-size: 16px;
+}
+
+
+/*Chick styling*/
+
+.chickTable {
+    border: 10px solid #CC3399;
+    background-color: #FFFF00;
+}
+
+.chickHead {
+    font-family: georgia;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.chickItem {
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    font-style: italic;
+}
