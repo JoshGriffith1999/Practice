@@ -88,4 +88,4 @@ if __name__ == '__main__':
     list.InsertEnd(8)
     list.InsertEnd(9)
     list.InsertEnd(10)
-    list.PrintListForward()
+    list.PrintListbackwards()

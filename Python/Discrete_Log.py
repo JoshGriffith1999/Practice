@@ -8,8 +8,7 @@ def order(a, p):
         if power_mod(a, i, p) == 1:
             return i
     return "No possible solution"
-def is_gen():
-    
+###########################################################
 a = int(sys.argv[1])
 k = int(sys.argv[2])
 p = int(sys.argv[3])
