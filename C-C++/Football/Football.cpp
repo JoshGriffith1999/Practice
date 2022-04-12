@@ -1,8 +1,9 @@
-#include"header/controller.h"
-
+//#include"controller.h"
+#include"controller.h"
 int main(){
 
-    Team LSU();
+    log();
+    Team LSU;
 
     return 0;
 }

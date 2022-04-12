@@ -2,21 +2,22 @@
 #define __Team__
 #include<iostream>
 #include<string>
-
+#include"Offsense.h"
+#include"Defense.h"
 
 class Team{
 
-    Team();
-    ~Team();
-
     private:
-    string College;
-    string Mascot;
+    std::string College;
+    std::string Mascot;
     int CollegeID;
     Offense TeamOffense;
     Defense TeamDefense;
 
     public:
+    Team();
+    ~Team();
+    
     void SetOffsense(Offense);
     void SetDefense(Defense);
     void SetCollge(int);
@@ -25,8 +26,8 @@ class Team{
 
     Offense GetOffenseStats();
     Defense GetDefenseStats();
-    string getCollege();
-    string getMascot();
+    std::string getCollege();
+    std::string getMascot();
     int SetCollegeID();
 };
 
