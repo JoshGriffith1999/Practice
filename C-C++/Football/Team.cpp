@@ -1,4 +1,4 @@
-#include"../header/Team.h"
+#include "Team.h"
 
 /*
 private variables
@@ -15,16 +15,17 @@ Team::Team(){
 Team::~Team(){
     std::cout << "We want Bama" << std::endl;
 }
+
 void Team::SetOffsense(Offense PassIN){
     this->TeamOffense = PassIN;
 }
 void Team::SetDefense(Defense PassIN){
     this->TeamDefense = PassIN;
 }
-void Team::SetCollge(string PassINCollege){
+void Team::SetCollge(std::string PassINCollege){
     this->College = PassINCollege;
 }
-void Team::SetMascot(string PassINCollegeMascot){
+void Team::SetMascot(std::string PassINCollegeMascot){
     this->Mascot = PassINCollegeMascot;
 }
 void Team::SetCollegeID(int PassINCollegeID){
@@ -35,12 +36,12 @@ Offense Team::GetOffenseStats(){
     return this->TeamOffense;
 }
 Defense Team::GetDefenseStats(){
-    return this->TeamODefense;
+    return this->TeamDefense;
 }
-string Team::getCollege(){
+std::string Team::getCollege(){
     return this->College;
 }
-string Team::getMascot(){
+std::string Team::getMascot(){
     return this->Mascot;
 }
 int Team::SetCollegeID(){
