@@ -1,5 +1,5 @@
 #include "Offsense.h"
 
-Offense::Offense(){
+void Offense::SetOffense(float PPG){
     std::cout << "Tebow Mania" << std::endl;
 }

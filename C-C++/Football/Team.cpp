@@ -9,13 +9,18 @@ Offense TeamOffense;
 Defense TeamDefense;
 */
 
+/*
+Basic Defualt Contructor, does nothing except print off message
+*/
 Team::Team(){
     std::cout << "Go Tigers" << std::endl;
 }
+
 Team::~Team(){
     std::cout << "We want Bama" << std::endl;
 }
 
+//These setters are here just in case something would need to change down the line
 void Team::SetOffsense(Offense PassIN){
     this->TeamOffense = PassIN;
 }
@@ -32,6 +37,7 @@ void Team::SetCollegeID(int PassINCollegeID){
     this->CollegeID = PassINCollegeID;
 }
 
+//These getters are here so we can get data about the school
 Offense Team::GetOffenseStats(){
     return this->TeamOffense;
 }

@@ -7,5 +7,5 @@
 #include "Defense.h"
 
 void log();
-
+void log(Team* school);
 #endif

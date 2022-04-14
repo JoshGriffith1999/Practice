@@ -5,7 +5,9 @@
 class Offense{
 
     public:
-    Offense();
-    float PointsPerGame;    
+    
+    float PointsPerGame;
+
+    void SetOffense(float);
 };
 #endif

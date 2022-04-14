@@ -5,7 +5,9 @@
 class Defense{
 
     public:
-    Defense();
+    
     float PointsAllowedPerGame;
+
+    void SetDefense(float);
 };
 #endif

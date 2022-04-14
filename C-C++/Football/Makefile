@@ -6,7 +6,7 @@ CFLAGS 		 := -I$(INCLUDE_DIRS)
 # $@ simplifies down to file being created
 # $^ adds all prerequisites files needed
 
-Football: Football.cpp controller.o Team.o Offsense.o Defense.o
+FootballFinal: Football.cpp controller.o Team.o Offsense.o Defense.o
 	$(CC) -o $@ $^
 
 controller.o: controller.cpp controller.h
@@ -21,5 +21,9 @@ Offsense.o: Offsense.cpp Offsense.h
 Defense.o: Defense.cpp Defense.h
 	$(CC) -c -o $@ $<
 
+#template for future objects
+#Object.o: Object.cpp Object.h
+#	$(CC) -c -o $@ $<
+
 clean:
-	rm *.o
+	rm -f *.o
