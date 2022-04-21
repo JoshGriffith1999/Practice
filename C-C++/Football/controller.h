@@ -8,4 +8,5 @@
 
 void log();
 void log(Team* school);
+void logOffense(Offense O);
 #endif

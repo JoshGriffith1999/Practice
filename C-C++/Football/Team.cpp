@@ -38,11 +38,11 @@ void Team::SetCollegeID(int PassINCollegeID){
 }
 
 //These getters are here so we can get data about the school
-Offense Team::GetOffenseStats(){
-    return this->TeamOffense;
+float Team::GetOffenseStats(){
+    return this->TeamOffense.getPPG();
 }
-Defense Team::GetDefenseStats(){
-    return this->TeamDefense;
+float Team::GetDefenseStats(){
+    return this->TeamDefense.getDefense();
 }
 std::string Team::getCollege(){
     return this->College;

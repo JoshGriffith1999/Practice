@@ -16,8 +16,8 @@ class Team{
         void SetMascot(std::string);
         void SetCollegeID(int);
 
-        Offense GetOffenseStats();
-        Defense GetDefenseStats();
+        float GetOffenseStats();
+        float GetDefenseStats();
         std::string getCollege();
         std::string getMascot();
         int SetCollegeID();

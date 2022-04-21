@@ -9,5 +9,6 @@ class Defense{
     float PointsAllowedPerGame;
 
     void SetDefense(float);
+    float getDefense();
 };
 #endif
