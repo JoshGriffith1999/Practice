@@ -1,3 +1,14 @@
+Linux Command
+_________________________________________________________________________________
+whoami: tells you who you currently logged in as
+pwd: tells current working directory
+cd <directory> : change directory
+ls: lists all files and folder in a directory
+
+
+
+Git Command
+_________________________________________________________________________________
 git config --global user.name "Sam Smith": config author name
 git config --global user.email sam@example.com: config author email
 git init: create new repository
