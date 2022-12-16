@@ -12,7 +12,7 @@ int main(int argc, char** argv){
     //char* send_msg3 = argv[3];
 
     zsock_t* request = zsock_new(ZMQ_REQ);
-    zsock_connect(request, "tcp://localhost:5555");
+    zsock_connect(request, "tcp://10.0.2.15:5555");
 
     for(int i = 0; i< 100; i++){
         

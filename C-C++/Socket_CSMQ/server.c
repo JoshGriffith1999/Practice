@@ -5,7 +5,7 @@
 int main(int argc, char** argv){
 
     zsock_t* responder = zsock_new(ZMQ_REP);
-    int error_code = zsock_bind(responder, "tcp://*:5555");
+    int error_code = zsock_bind(responder, "tcp://10.0.2.15:5555");
 
     if (error_code != 5555){
         printf("Failed to bind to port 5555");
