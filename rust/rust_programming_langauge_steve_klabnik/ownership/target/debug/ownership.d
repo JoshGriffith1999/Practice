@@ -1,0 +1,1 @@
+/home/josh/Desktop/Practice/rust/rust_programming_langauge_steve_klabnik/ownership/target/debug/ownership: /home/josh/Desktop/Practice/rust/rust_programming_langauge_steve_klabnik/ownership/src/main.rs
