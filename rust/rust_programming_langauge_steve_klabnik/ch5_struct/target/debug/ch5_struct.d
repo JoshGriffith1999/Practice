@@ -1,0 +1,1 @@
+/home/josh/Desktop/Practice/rust/rust_programming_langauge_steve_klabnik/ch5_struct/target/debug/ch5_struct: /home/josh/Desktop/Practice/rust/rust_programming_langauge_steve_klabnik/ch5_struct/src/main.rs

@@ -13,6 +13,7 @@ episode::episode(int number, int season, string title){
 }
 episode::~episode(){}
 
+/*                                      */
 void episode::set_episode_number(int episode_number){
 
     try{
@@ -41,7 +42,6 @@ void episode::set_season_number(int season_number){
         perror("The episode number you entered is below 1 - this isn't possible\n");
     }
 }
-
 void episode::set_episode_title(string episode_title){
     try{
         if(episode_title == " "){
@@ -55,7 +55,22 @@ void episode::set_episode_title(string episode_title){
         perror("The episode title you entered is blank - this isn't possible\n");
     }
 }
+void episode::set_rating(int rating){
 
+    try{
+        if(rating < 1 || rating > 5){
+            throw(rating);
+        }
+        else{
+            p_set_rating(rating);
+        }
+    }
+    catch(int rating){
+        perror("The rating you gave is not a valid rating. All rating must be between 1 and 5\n");
+    }
+}
+
+/*                                   */
 int episode::get_episode_number(){
     
     int season_number = this->p_get_episode_number();
@@ -73,7 +88,6 @@ int episode::get_episode_number(){
         }
 
 }
-
 int episode::get_season_number(){
     int season_number = this->p_get_episode_number();
 
@@ -90,7 +104,6 @@ int episode::get_season_number(){
         }
 
 }
-
 string episode::get_episode_title(){
 
     string episode_title = this->p_get_episode_title();
@@ -107,6 +120,13 @@ string episode::get_episode_title(){
         perror("The episode has no title to be returned. Please set one.\n");
     }
 }
+int episode::get_rating(){
+    int rating = this->p_get_rating();
+
+    return rating;
+
+}
+
 
 /*       Private Methods             */
 void episode::p_set_episode_number(int episode){
@@ -119,6 +139,9 @@ void episode::p_set_season_number(int season){
 void episode::p_set_episode_title(string title){
     this->episode_title = title;
 }
+void episode::p_set_rating(int rating){
+    this->episode_rating = (imdb_rating)rating;
+}
 
 int episode::p_get_episode_number(){
     return this->episode_number;
@@ -128,4 +151,32 @@ int episode::p_get_season_number(){
 }
 string episode::p_get_episode_title(){
     return this->episode_title; 
+}
+int episode::p_get_rating(){
+
+    int rating = 0;
+
+    switch (this->episode_rating)
+    {
+        case imdb_rating::A:
+            rating = 1;
+            break;
+        case imdb_rating::B:
+            rating = 2;
+            break;
+        case imdb_rating::C:
+            rating = 3;
+            break;
+        case imdb_rating::D:
+            rating = 4;
+            break;
+        case imdb_rating::F:
+            rating = 5;
+            break;
+        default:
+            rating = 5;
+            break;
+    }
+
+    return rating;
 }

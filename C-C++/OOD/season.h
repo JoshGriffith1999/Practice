@@ -9,7 +9,7 @@
 class season{
 
     private:
-        episode episode_list[MAX_NUMBER_OF_EPISODES];
+        episode* episode_list = new episode[MAX_NUMBER_OF_EPISODES];
         int episodes_in_season;
 
     public:
@@ -27,3 +27,12 @@ class season{
 
 };
 #endif // !__SEASN__H__
+
+season::season(){
+    int episodes_in_season = 0;
+}
+
+season::~season(){
+
+    delete episode_list;
+}
