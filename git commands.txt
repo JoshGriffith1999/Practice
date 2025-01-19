@@ -26,24 +26,29 @@ git config --global user.name "Sam Smith": config author name
 git config --global user.email sam@example.com: config author email
 git init: create new repository
 
-//clone, commit, push
-git clone /path/@some:	clone repository
-git add <file name>:	commit file name
+//Init, clone, commit, push
+git init:               Makes the current directory a git project
+git clone /path/@some:	clone repository from a remote location
+git add <file name>:	add file name to the commit
 git add -a OR git add.:	commit all files edits
-git commit -m "":	commit files to repository
-git push origin master: push to  master branch
-git status:		list files in the commit or are not in commit
+git commit -m "":	    commit files to repository history with a comment
+git push origin master: push to  master branch, change master to your branch
+git status:		        list files in the commit or are not in commit
 
 //branches
-git checkout -b <branch Name>:	create new branch
-git checkout <branch Name>:	switch to branch
-git branch:			list all branches
-git put origin <branch name>:	push to branch
+git checkout -b <branch Name>:	        create new branch
+git branch -d <branch name>:            delete a local branch
+git push --delete origin <branch name>: Delete a branch in a remote repository
+git checkout <branch Name>:	            switch to branch
+git switch <branch name>:               switch to a different branch
+git branch:			                    list all branches
+git push origin <branch name>:	        push to branch
+git show:                               shows commit,tag, tree history
 
 //update from remote repository
-git pull:			grab updates in repository
+git pull:			        grab updates in repository
 git merge <branch name>:	To merge a different branch into your active branch:
-git diff:			View all the merge conflicts: View the conflicts against the base file:
+git diff:			        View all the merge conflicts: View the conflicts against the base file:
 
 Preview changes, before merging: View all the merge conflicts: View the conflicts against the base file:
 git diff --base <filename>:		View all the merge conflicts: View the conflicts against the base file:
