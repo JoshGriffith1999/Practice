@@ -1,0 +1,6 @@
+java notes on linux
+Install: sudo apt-get install defualt jdk
+Install: sudo apt-get install defualt jre
+
+compile: javac : file.java
+run: java <fileName>
